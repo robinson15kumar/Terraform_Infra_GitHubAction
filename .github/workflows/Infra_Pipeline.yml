@@ -1,0 +1,14 @@
+# GitHub Actions Workflow
+
+name: Infra_Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  job:
+    runs-on: ubuntu-latest
+
+  

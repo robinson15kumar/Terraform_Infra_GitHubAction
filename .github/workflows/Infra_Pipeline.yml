@@ -4,11 +4,15 @@ name: Infra_Pipeline
 
 on:
   push:
-    branches: [ "main" ]
+  #  branches: [ "main" ]
   workflow_dispatch:
 
 jobs:
-  job:
+  job1:
+    name: repo checkout
     runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+    
 
   

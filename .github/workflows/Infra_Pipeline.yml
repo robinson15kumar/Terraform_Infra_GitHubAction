@@ -13,6 +13,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-    
+  job2:
+    name: terraform install
+    runs-on: ubuntu-latest
+    steps:
+    - uses: hashicorp/setup-terraform@v3
+      with:
+        terraform_version: "1.1.7"
+  job3:
+    name: terraform init
+    runs-on: ubuntu-latest
+    steps:
+    - uses: hashicorp/setup-terraform@v3
+    - run: terraform init
 
-  

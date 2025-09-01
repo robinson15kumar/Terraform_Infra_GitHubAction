@@ -12,7 +12,7 @@ jobs:
     name: repo checkout
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+    - uses: actions/checkout@v4
   job2:
     name: terraform install
     runs-on: ubuntu-latest
@@ -26,4 +26,5 @@ jobs:
     steps:
     - uses: hashicorp/setup-terraform@v3
     - run: terraform init
+      working-directory: environments/dev
 
